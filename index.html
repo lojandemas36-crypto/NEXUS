@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1a202c">
+  <meta name="description" content="NEXUS is a workflow orchestrator that makes uncertainty visible and reviewable.">
+  <title>NEXUS — Workflows that know when to ask</title>
+  <style>
+    :root{color-scheme:light;--primary:#0a6e0a;--secondary:#1a202c;--accent:#3182ce;--bg:#f7fafc;--surface:#fff;--text:#1a202c;--muted:#5d6878;--line:#e2e8f0}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--text);background:#fff;font:16px/1.65 Inter,system-ui,-apple-system,"Segoe UI",sans-serif}a{color:var(--accent)}.wrap{width:min(1160px,calc(100% - 40px));margin:auto}
+    header{position:sticky;top:0;z-index:5;border-bottom:1px solid var(--line);background:#ffffffed;backdrop-filter:blur(12px)}nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{color:var(--primary);font-size:1.25rem;font-weight:900;letter-spacing:.13em;text-decoration:none}.navlinks{display:flex;gap:22px;align-items:center;color:var(--muted);font-size:.95rem}.navlinks a{text-decoration:none}.navlinks a:hover{color:var(--primary)}
+    .hero{padding:96px 0 88px;background:radial-gradient(ellipse at 84% 12%,#e4f4e5 0,transparent 42%),linear-gradient(135deg,#f7fbf7,#fff 68%)}.eyebrow{display:flex;align-items:center;flex-wrap:wrap;gap:10px;color:var(--primary);font-size:.78rem;font-weight:850;letter-spacing:.15em;text-transform:uppercase}.version{display:inline-flex;padding:5px 10px;border:1px solid #b8d9ba;border-radius:999px;background:#eef8ef;color:#145e20;letter-spacing:.02em}h1{margin:16px 0 4px;font-size:clamp(3.5rem,10vw,6.6rem);letter-spacing:-.075em;line-height:.98}.tagline{max-width:720px;margin:20px 0;color:#344153;font-size:clamp(1.3rem,3vw,1.9rem);line-height:1.35}.lede{max-width:700px;color:var(--muted)}.button{display:inline-flex;align-items:center;justify-content:center;margin-top:16px;padding:12px 20px;border-radius:9px;background:var(--primary);color:white;font-weight:750;text-decoration:none;box-shadow:0 8px 18px #0a6e0a24;transition:transform .16s,box-shadow .16s}.button:hover{transform:translateY(-2px);box-shadow:0 12px 24px #0a6e0a35;text-decoration:none}
+    section{padding:76px 0}h2{margin:0 0 12px;font-size:clamp(1.8rem,4vw,2.5rem);letter-spacing:-.04em;line-height:1.2}.intro{max-width:700px;margin:0 0 30px;color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.card{padding:24px;border:1px solid var(--line);border-radius:16px;background:var(--surface);box-shadow:0 8px 28px #1a202c08;transition:transform .16s,border-color .16s,box-shadow .16s}.card:hover{transform:translateY(-3px);border-color:#9bd29e;box-shadow:0 12px 30px #1a202c12}.icon{font-size:1.65rem}.card h3,.step h3{margin:12px 0 6px;font-size:1.1rem}.card p,.step p{margin:0;color:var(--muted);font-size:.96rem}
+    .steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:30px}.step{position:relative;padding:23px;border:1px solid var(--line);border-radius:14px;background:var(--surface)}.step:not(:last-child)::after{content:"→";position:absolute;right:-22px;top:38%;z-index:1;color:var(--primary);font-size:1.5rem;font-weight:800}.num{color:var(--accent);font-size:.78rem;font-weight:850;letter-spacing:.12em}.how{background:var(--bg)}
+    .demo{background:var(--secondary);color:white}.demo .intro{color:#cbd5e0}.screenshot{display:grid;min-height:330px;place-items:center;padding:24px;border:1px solid #ffffff35;border-radius:18px;background:linear-gradient(145deg,#202b3b,#111820);text-align:center;color:#d8e2ed}.frame{width:min(760px,100%);min-height:220px;display:grid;place-items:center;border:1px dashed #91a4b8;border-radius:12px;background:#ffffff08}.frame p{margin:8px;color:#e2e8f0}.frame small{color:#b9c6d3}.pill{display:inline-block;margin-top:16px;padding:5px 10px;border:1px solid #ffffff40;border-radius:999px;color:#e2e8f0;font-size:.8rem}
+    footer{padding:30px 0;color:var(--muted);font-size:.92rem}.foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}.credit{color:var(--secondary);font-weight:700}a:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+    @media(max-width:760px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.steps{grid-template-columns:1fr}.step:not(:last-child)::after{content:"↓";right:16px;top:auto;bottom:-25px}.hero{padding:70px 0 60px}.screenshot{min-height:270px}}
+    @media(max-width:520px){.navlinks{gap:12px;font-size:.82rem}.navlinks a:nth-child(2){display:none}.grid{grid-template-columns:1fr}.wrap{width:calc(100% - 28px)}nav{min-height:62px}.version{font-size:.68rem}.frame{min-height:190px}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+  </style>
+</head>
+<body>
+  <header><nav class="wrap" aria-label="Main navigation"><a class="brand" href="#top">NEXUS</a><div class="navlinks"><a href="#features">Features</a><a href="#how">How it works</a><a href="#demo">Live Demo</a></div></nav></header>
+  <main id="top">
+    <section class="hero"><div class="wrap"><div class="eyebrow">Workflow orchestration <span class="version">Version 1.1 — Sealed 2026-11-13</span></div><h1>NEXUS</h1><p class="tagline">Run workflows that know when to ask for help.</p><p class="lede">Coordinate multi-step work, keep uncertain outcomes visible, and bring a person into the loop when a decision matters.</p><a class="button" href="https://github.com/lojandemas36-crypto/nexus">Get Started <span aria-hidden="true">&nbsp;→</span></a></div></section>
+    <section id="features"><div class="wrap"><h2>Built for work that needs a clear outcome</h2><p class="intro">NEXUS tracks what happened, surfaces uncertainty, and keeps decisions reviewable.</p><div class="grid">
+      <article class="card"><div class="icon" aria-hidden="true">🔗</div><h3>Workflow Orchestration</h3><p>Arrange dependent tasks and run them as one coordinated workflow.</p></article>
+      <article class="card"><div class="icon" aria-hidden="true">🧭</div><h3>Uncertain-Resume</h3><p>Keep unresolved results visible for review instead of calling them successful.</p></article>
+      <article class="card"><div class="icon" aria-hidden="true">🧑‍⚖️</div><h3>Decision API</h3><p>Record an explicit human decision when a workflow needs direction.</p></article>
+      <article class="card"><div class="icon" aria-hidden="true">🔁</div><h3>NoEffect Retry</h3><p>Use bounded retry handling for operations that report no side effect.</p></article>
+      <article class="card"><div class="icon" aria-hidden="true">📊</div><h3>Read-Only Dashboard</h3><p>Inspect workflow state through a local SQLite-backed dashboard.</p></article>
+      <article class="card"><div class="icon" aria-hidden="true">🦙</div><h3>Live-LLM Validation</h3><p>Validated locally with Ollama and qwen3.5:2b at zero API cost.</p></article>
+    </div></div></section>
+    <section id="how" class="how"><div class="wrap"><h2>How it works</h2><p class="intro">Three clear steps from a workflow definition to a useful next action.</p><div class="steps"><article class="step"><div class="num">STEP 01</div><h3>Define</h3><p>Describe tasks and the dependencies between them.</p></article><article class="step"><div class="num">STEP 02</div><h3>Run</h3><p>NEXUS records outcomes, including results it cannot safely resolve.</p></article><article class="step"><div class="num">STEP 03</div><h3>Review</h3><p>Inspect the history and record a human decision where needed.</p></article></div></div></section>
+    <section id="demo" class="demo"><div class="wrap"><h2>Live Demo</h2><p class="intro">Preview the local NEXUS dashboard. The image area will show the dashboard screenshot when one is added.</p><div class="screenshot"><div class="frame"><div><div style="font-size:2rem" aria-hidden="true">▣</div><p><strong>Dashboard screenshot preview</strong></p><small>Dashboard screenshot: <code>screenshots/dashboard_overview.png</code>.</small></div></div></div><span class="pill">Local dashboard · 127.0.0.1:8765</span></div></section>
+  </main>
+  <footer><div class="wrap foot"><span>NEXUS v1.1 · MIT License</span><span class="credit">Built by Lojan Demas · 2026</span><span>Contact: project maintainer</span></div></footer>
+</body>
+</html>
+
+
